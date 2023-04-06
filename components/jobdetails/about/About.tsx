@@ -1,8 +1,8 @@
-import { View, Text } from "react-native";
+import { View, Text } from 'react-native';
 
-import styles from "./about.style";
+import styles from './about.style';
 
-const JobAbout = ({ info }) => {
+const JobAbout = ({ info }: { info: string }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.headText}>About the job:</Text>
@@ -14,4 +14,4 @@ const JobAbout = ({ info }) => {
   );
 };
 
-export {JobAbout};
+export { JobAbout };

@@ -1,8 +1,13 @@
-import { View, Text } from "react-native";
+import { View, Text } from 'react-native';
 
-import styles from "./specifics.style";
+import styles from './specifics.style';
 
-const Specifics = ({ title, points }) => {
+type IProps = {
+  title: string;
+  points: string[];
+};
+
+const Specifics = ({ title, points }: IProps) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}:</Text>
@@ -19,4 +24,4 @@ const Specifics = ({ title, points }) => {
   );
 };
 
-export {Specifics};
+export { Specifics };

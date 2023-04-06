@@ -1,6 +1,8 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import { RAPID_API_KEY } from "../constants";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { RAPID_API_KEY } from '../constants';
 
 const useFetch = (endpoint: string, query: any) => {
   const [data, setData] = useState([]);
@@ -8,13 +10,13 @@ const useFetch = (endpoint: string, query: any) => {
   const [error, setError] = useState(null);
 
   const options = {
-    method: "GET",
+    method: 'GET',
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     headers: {
-      "X-RapidAPI-Key": RAPID_API_KEY,
-      "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
+      'X-RapidAPI-Key': RAPID_API_KEY,
+      'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
     },
-    params: { ...query },
+    params: { ...query }
   };
 
   const fetchData = async () => {
@@ -26,7 +28,7 @@ const useFetch = (endpoint: string, query: any) => {
       setIsLoading(false);
     } catch (error) {
       setError(error);
-      console.log(error.message)
+      console.log(error.message);
     } finally {
       setIsLoading(false);
     }
