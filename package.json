@@ -1,6 +1,6 @@
 {
   "name": "job-searcher",
-  "description": "💼 cross-platfrom mobile app to help developers find jobs easier.",
+  "description": "💼 cross-platform mobile app to help developers find jobs easier.",
   "version": "1.0.0",
   "private": true,
   "resolutions": {
