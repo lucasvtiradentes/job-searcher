@@ -1,18 +1,12 @@
-node_modules/
+#https://git-scm.com/docs/gitignore
+
+# FOLDERS #################################
+
 .expo/
-dist/
-ignore/
+node_modules/
 
-.env
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
+# FILES ###################################
+
+pnpm-lock.yaml
+yarn.lock
 package-lock.json
-
-# macOS
-.DS_Store
