@@ -8,7 +8,6 @@ import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from '../components
 const Home = () => {
   const router = useRouter();
   const [searchTerm, setSearchTerm] = useState<string>('');
-  console.log(`rendered home: ${searchTerm}`);
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
@@ -16,8 +15,8 @@ const Home = () => {
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
           headerShadowVisible: false,
-          headerLeft: () => <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" handlePress={() => console.log('1')} />,
-          headerRight: () => <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" handlePress={() => console.log('2')} />,
+          headerLeft: () => <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" handlePress={() => console.log('open menu')} />,
+          headerRight: () => <ScreenHeaderBtn iconUrl={images.profile} dimension="100%" handlePress={() => console.log('open profile')} />,
           headerTitle: ''
         }}
       />

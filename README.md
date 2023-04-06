@@ -1,9 +1,7 @@
 <a name="TOC"></a>
 
 <h3 align="center">
-<!-- <DYNFIELD:boilerplate_name> -->
-  REACT-NATIVE-EXPO
-<!-- </DYNFIELD:boilerplate_name> -->
+  JOB SEARCHER APPLICATION
 </h3>
 
 <p align="center">
@@ -11,42 +9,33 @@
 </a> • <a href="#information_source-related">Related</a>
 </p>
 
-<!-- <DYNFIELD:boilerplate_image> -->
-
-<!-- </DYNFIELD:boilerplate_image> -->
-
 <div align="center"><a href="#"><img src="./.github/images/divider.png" /></a></div>
+
+
+## :trumpet: Overview
+
+This is a simple application to show all available developer jobs in common platforms such as linkedin, indeed and others.
+
+<div align="center">
+  <img height="350" src="./.github/images/preview.webp" />
+</div>
 
 ## :dart: Features</a><a href="#TOC"><img align="right" src="./.github/images/up_arrow.png" width="22"></a>
 
 ### Main features
-<!-- <DYNFIELD:boilerplate_app_features> -->
-- [x] [react native](https://reactnative.dev/docs/environment-setup) [expo](https://expo.dev/) application;
-- [x] tests-friendly with [jest](https://github.com/facebook/jest).
-<!-- </DYNFIELD:boilerplate_app_features> -->
+
+- [x] get job opportunities from [this api](https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch/), which is part of [rappidAPI](https://rapidapi.com/);
+- [x] three screens available: home, job detail and job search pages;
 
 ### Project features
 
-<!-- <DYNFIELD:boilerplate_project_features> -->
-- [x] everytime you need to make a commit, you can run the `commit` package.json script, in order to show all commitizen available options;
-- [x] everytime you run `commit` script, the `precommit` script will run the [github-issues.ts](./scripts/github-issues.ts) file in order to display all available issues in the project remote github repository;
-- [x] if you want to change the available commits types, you can edit the [gitmoji-setup.ts](./scripts/gitmoji-setup.ts) file and run the `script:gitmoji` packge.json script, which will produce the configs ready to replace in the [.czrc](./.czrc) and [commitlint.config.js](./commitlint.config.js) files.
-<!-- </DYNFIELD:boilerplate_project_features> -->
+- [x] [react native](https://reactnative.dev/docs/environment-setup) apllication using [expo](https://expo.dev/);
+- [x] tests-friendly with [jest](https://github.com/facebook/jest).
 
 <div align="center"><a href="#"><img src="./.github/images/divider.png" /></a></div>
 
 ## :wrench: Development<a href="#TOC"><img align="right" src="./.github/images/up_arrow.png" width="22"></a>
 
-### How to use it?
-
-To use this boilerplate you can either:
-
-<!-- <DYNFIELD:boilerplate_project_download> -->
-1. install [boilermanager](https://github.com/lucasvtiradentes/boilermanager) and select it from the boilerplate list everytime you want to use it (✅ recommended)
-2. download this folder by clicking [this link](https://download-directory.github.io/?url=https://github.com/lucasvtiradentes/boilermanager-boilerplates/tree/master/boilerplates/mobile-app/react-native-expo)
-<!-- </DYNFIELD:boilerplate_project_download> -->
-
-<!-- <DYNFIELD:boilerplate_available_commands> -->
 ### Available commands
 
 After download this project in your computer, go to the project folder and run these commands:
@@ -64,14 +53,10 @@ $ npm run build
 # Run the project in production mode
 $ npm run start
 ```
-
-<!-- </DYNFIELD:boilerplate_available_commands> -->
-
 ### Used technologies
 
 This project uses the following technologies:
 
-<!-- <DYNFIELD:boilerplate_technologies_table> -->
 <div align="center">
 <table>
   <tr>
@@ -103,20 +88,10 @@ This project uses the following technologies:
   </tr>
 </table>
 </div>
-<!-- </DYNFIELD:boilerplate_technologies_table> -->
 
 ## :information_source: Related<a href="#TOC"><img align="right" src="./.github/images/up_arrow.png" width="22"></a>
 
-<!-- <DYNFIELD:boilerplate_related> -->
-- [React Native Expo to APK File](https://www.youtube.com/watch?v=MK4JjqbHFBk);
-- [Build APKs for Android Emulators and devices](https://docs.expo.dev/build-reference/apk/);
-- [How to publish Expo React Native App to Apple App Store (step-by-step tutorial)](https://www.youtube.com/watch?v=LE4Mgkrf7Sk);
-- [How to publish Expo React Native App to Google Play Store](https://www.youtube.com/watch?v=oBWBDaqNuws);
-- [Publish Expo React Native App to Google Play Store](https://www.youtube.com/watch?v=7DQbbTQpUjQ&list=PLk8gdrb2DmCjsRsDIwMBJdf350qKMiJ8R);
-- [Expo online development](https://expo.dev/);
-- [Apple developer account](https://developer.apple.com/account);
-- [Google developer account](https://play.google.com/console/signup).
-<!-- </DYNFIELD:boilerplate_related> -->
+- [Inspiration for this app](https://www.youtube.com/watch?v=mJ3bGvy0WAY);
 
 <div align="center"><a href="#"><img src="./.github/images/divider.png" /></a></div>
 

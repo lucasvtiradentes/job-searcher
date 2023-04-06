@@ -8,21 +8,18 @@ const container = (selectedJob: string, item: any) => ({
   padding: SIZES.xLarge,
   backgroundColor: selectedJob === item.job_id ? COLORS.primary : '#FFF',
   borderRadius: SIZES.medium,
-  justifyContent: 'space-between',
   ...SHADOWS.medium,
   shadowColor: COLORS.white
 });
 
-const logoContainer = (selectedJob: string, item: any) => ({
+const logoContainer = (selectedJob: any, item: any) => ({
   width: 50,
   height: 50,
   backgroundColor: selectedJob === item.job_id ? '#FFF' : COLORS.white,
-  borderRadius: SIZES.medium,
-  justifyContent: 'center',
-  alignItems: 'center'
+  borderRadius: SIZES.medium
 });
 
-const jobName = (selectedJob: string, item: any) => ({
+const jobName = (selectedJob: any, item: any) => ({
   fontSize: SIZES.large,
   fontFamily: FONT.medium,
   color: selectedJob === item.job_id ? COLORS.white : COLORS.primary

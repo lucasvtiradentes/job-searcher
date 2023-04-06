@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { useRouter } from 'expo-router';
 import { View, Text, TouchableOpacity, FlatList, ActivityIndicator } from 'react-native';
@@ -6,6 +7,7 @@ import styles from './popularjobs.style';
 import { COLORS, SIZES } from '../../../constants';
 import { PopularJobCard } from '../../common/cards/popular/PopularJobCard';
 import useFetch from '../../../hooks/use-fetch';
+import { Job } from '../../../types/Job';
 
 const Popularjobs = () => {
   const router = useRouter();
@@ -13,14 +15,12 @@ const Popularjobs = () => {
     query: 'React developer',
     num_pages: '1'
   });
-  const [selectedJob, setSelectedJob] = useState();
+  const [selectedJob, setSelectedJob] = useState<string>('');
 
-  const handleCardPress = (item) => {
+  const handleCardPress = (item: Job) => {
     router.push(`/job-details/${item.job_id}`);
     setSelectedJob(item.job_id);
   };
-
-  console.log('rendered popular jobs');
 
   return (
     <View style={styles.container}>

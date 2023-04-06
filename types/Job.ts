@@ -31,7 +31,10 @@ export type Job = {
   job_max_salary: string;
   job_salary_currency: string;
   job_salary_period: string;
-  job_highlights: string;
+  job_highlights: {
+    Qualifications: string[];
+    Responsibilities: string[];
+  };
   job_job_title: string;
   job_posting_language: string;
   job_onet_soc: string;

@@ -3,9 +3,10 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { RAPID_API_KEY } from '../constants';
+import { Job } from '../types/Job';
 
 const useFetch = (endpoint: string, query: any) => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<Job[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState(null);
 
@@ -19,6 +20,10 @@ const useFetch = (endpoint: string, query: any) => {
     params: { ...query }
   };
 
+  useEffect(() => {
+    fetchData();
+  }, []);
+
   const fetchData = async () => {
     setIsLoading(true);
 
@@ -28,15 +33,10 @@ const useFetch = (endpoint: string, query: any) => {
       setIsLoading(false);
     } catch (error) {
       setError(error);
-      console.log(error.message);
     } finally {
       setIsLoading(false);
     }
   };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
 
   const refetch = () => {
     setIsLoading(true);

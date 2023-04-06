@@ -2,6 +2,7 @@
 
 # FOLDERS #################################
 
+.env
 .expo/
 node_modules/
 
